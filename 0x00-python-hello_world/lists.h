@@ -8,7 +8,7 @@
  * Description: singly linked list for Holberton project
  */
 
-typedf struct listint_s{
+typedef struct listint_s{
 	int n;
 	struct listint_s *next;
 } listint_t;
