@@ -3,5 +3,4 @@ import add_0
 
 a = 1
 b = 2
-c = add_0.add(a, b)
-print(f"{a} + {b} = {c}")
+print(f"{a} + {b} = {add_0.add(a, b)}")
