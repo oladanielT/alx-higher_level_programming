@@ -1,16 +1,11 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
-    """writing to make a script dynamic"""
-    import sys
-
-
-    arg_len = len(sys.argv) - 1
-    print("{} arguement{}".format(arg_len, "s" if arg_len != 1 else ""), end="")
-
-    if arg_len == 0:
+    """script to print the args"""
+    arg_ = len(argv)
+    print("{} argument{}".format(arg_, "s" if arg_ != 1 else ""), end="")
+    if arg_ == 0:
         print(".")
     else:
         print(":")
-        for i, arg in enumerate(sys.argv[1:], 1):
+        for i, arg in enumerate(sys.arg[1:], 1):
             print("{}: {}".format(i, arg))
-
