@@ -1,4 +1,6 @@
 #!/usr/bin/python3
 
 class Rectangle:
-    pass
+    def __init__(self, length, breadth):
+        self.length = length
+        self.breadth = breadth
