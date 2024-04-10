@@ -10,13 +10,11 @@ class Square:
         Initialize a square.
 
         Args:
-        size:Private instance attribute: size.
-        Instantiation with optional size: def __init__(self, size=0)
+            size:Private instance attribute: size.
 
-        raises:
-
-        TypeError: exception with the message size must be an integer
-        ValueError: xception with the message size must be >= 0
+        Raises:
+            TypeError: size must be an integer.
+            ValueError: size must be greater than zero.
         """
 
         if not isinstance(size, int):
