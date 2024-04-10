@@ -1,15 +1,21 @@
 #!/usr/bin/python3
 """
-Private instance attribute: size
-Instantiation with size (no type/value verification)
+Square module.
+
+Defines a square by:
+- Private instance attribute: size
+- Instantiation with size (no type/value verification)
 You are not allowed to import any module
 """
 
 class Square:
     """
-    size: accessing the size of the square
-    __size: making it return a private instance
+    Square class.
+
+    Attributes:
+        __size (int): The size of the square.
     """
+
     def __init__(self, size):
         """
         Initializes a Square instance with a given size.
