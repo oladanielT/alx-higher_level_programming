@@ -3,5 +3,5 @@
 0-rectangle: class Rectangle
 """
 class Rectangle:
-    """ Empty class """
+    """ empty class """
     pass
