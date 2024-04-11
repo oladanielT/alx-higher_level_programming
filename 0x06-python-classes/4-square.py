@@ -12,14 +12,14 @@ class Square:
             TypeError: size must be an integer.
             ValueError: size must be greater/equal to 0.
         """
-        self.size = size
-
+        self.__size = size
+    
     @property
     def size(self):
         """getting the size value and returning it as a private value"""
         return self.__size
-
-    @setter
+    
+    @size.setter
     def size(self, value):
         """
         Initializes size to value.
