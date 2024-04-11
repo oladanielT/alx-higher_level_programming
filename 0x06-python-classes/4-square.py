@@ -14,10 +14,12 @@ class Square:
         """
         self.size = size
 
+    @property
     def size(self):
         """getting the size value and returning it as a private value"""
         return self.__size
 
+    @setter
     def size(self, value):
         """
         Initializes size to value.
