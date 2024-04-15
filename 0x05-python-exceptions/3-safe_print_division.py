@@ -1,17 +1,16 @@
 #!/usr/bin/python3
-"""Defines a division module"""
+"""Defines a module for division"""
 
 
 def safe_print_division(a, b):
     """
-    Divides two integers and prints the result.
+    Represent function to divide.
 
-    Parameters:
-        a (int): The dividend.
-        b (int): The divisor.
-
-    Returns:
-        float or None:
+    Parameter:
+        a (int, float) : dividend.
+        b (int or float) : divisor.
+    Raises:
+        ZeroDivisionError : when divided by zero
     """
     try:
         result = a / b
@@ -19,7 +18,7 @@ def safe_print_division(a, b):
         result = None
     finally:
         if result is not None:
-            print("Inside result : {:.1f}".format(result))
+            print("Inside result: {:.1f}".format(result))
         else:
-            print("Inside result : None")
+            print("Inside result: None")
     return result
