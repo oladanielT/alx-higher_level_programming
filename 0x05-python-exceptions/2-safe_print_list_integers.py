@@ -19,7 +19,8 @@ def safe_print_list_integers(my_list=[], x=0):
                 printed += 1
                 if printed >= x:
                     break
-    except TypeError:
-        pass
+    except IndexError as er:
+        print()
+        raise er
     print()
     return printed
