@@ -5,9 +5,7 @@
 class Rectangle:
     """Represent a class"""
     def __init__(self, width=0, height=0):
-        """
-        Initialize the class.
-        
+        """Initialize the class.
         Parameters:
             width (int): width of the rectangle.
             height (int): height of the rectangle.
@@ -16,7 +14,7 @@ class Rectangle:
             ValueError: number must be >= 0.
         Returns:
             Area (int): area of the rectangle.
-            Pweimeter (int): perimeter of the rectangle.
+            Perimeter (int): perimeter of the rectangle.
         """
         self.width = width
         self.height = height
@@ -24,7 +22,7 @@ class Rectangle:
     @property
     def width(self):
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         if not isinstance(value, int):
