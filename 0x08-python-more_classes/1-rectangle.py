@@ -14,7 +14,7 @@ class Rectangle:
             TypeError: width and height must be an integer.
             ValueError: width and height must be >= 0.
         """
-        self.__width = width
+        self.width = width
         self.height = height
 
     @property
