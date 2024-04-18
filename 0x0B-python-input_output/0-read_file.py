@@ -3,11 +3,6 @@
 
 
 def read_file(filename=""):
-    """ Function to read a file.
-
-    Parameter:
-        filename: files to access.
-    """
-    with open(filename, encoding='utf-8') as f:
-        file_data = f.read()
-        print(file_data, end=' ')
+    """Function to read a file"""
+    with open(filename, encoding="utf-8") as file:
+        print(file.read(), end=' ')
