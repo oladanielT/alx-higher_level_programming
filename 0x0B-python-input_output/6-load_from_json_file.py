@@ -10,4 +10,4 @@ def load_from_json_file(filename):
         filename (str).
     """
     with open(filename, "w") as file:
-        json.load(file)
+        return json.load(file)
