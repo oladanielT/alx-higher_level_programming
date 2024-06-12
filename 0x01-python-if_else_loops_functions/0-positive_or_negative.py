@@ -1,5 +1,9 @@
 #!/usr/bin/python3
+"""
+function to print number
+"""
 import random
+
 number = random.randint(-10, 10)
 if (number > 0):
     print(number, "is positive")
