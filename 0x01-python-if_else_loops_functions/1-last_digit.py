@@ -2,7 +2,7 @@
 import random
 number = random.randint(-10000, 10000)
 
-ld = abs(number) % 10
+ld = number % 10
 s = "-" if number < 0 else "" if number == 0 else ""
 
 if (ld == 0):
