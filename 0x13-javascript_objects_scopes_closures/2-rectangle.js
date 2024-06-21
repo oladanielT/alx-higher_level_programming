@@ -2,19 +2,10 @@
 
 class Rectangle {
   constructor (w, h) {
-    if (w <= 0 || h <= 0) {
-      return null;
+    if (w > 0 && h > 0) {
+	    this.width = w;
+	    this.height = h;
     }
-    this.width = w;
-    this.height = h;
-  }
-
-  getWidth () {
-    return this.width;
-  }
-
-  getHeight () {
-    return this.height;
   }
 }
 module.exports = Rectangle;
