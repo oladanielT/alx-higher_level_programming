@@ -9,6 +9,13 @@ class Rectangle {
       this.height = h;
     }
   }
+	getWidth () {
+		return this.width;
+	}
+
+	getHeight () {
+		return this.height;
+	}
 }
 
 module.exports = Rectangle;
