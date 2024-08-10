@@ -12,9 +12,9 @@ $(document).ready(function() {
 
     $('#btn_translate').click(fetchHello)
 
-    $('#language_code').keypress(function(e) {
-        if (e.which === 13){
-            fetchHello
+    $('#language_code').on('keydown', function(e) {
+        if (e.keycode === 13){
+            fetchHello()
         }
     })
 })
