@@ -1,5 +1,4 @@
 #!/usr/bin/node
-
-const cont = ['C is fun', 'Python is cool',
-  'Javascript is amazing'];
-cont.forEach(text => { console.log(text); });
+console.log('C is fun');
+console.log('Python is cool');
+console.log('Javascript is amazing');
