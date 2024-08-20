@@ -1,12 +1,11 @@
 #!/usr/bin/node
 const a = Number(process.argv[2]);
 const b = Number(process.argv[3]);
-
-if (isNaN(a) || isNaN(b)) {
-  console.error(NaN);
-} else {
-  function add (a, b) {
-    return a + b;
+function add (a, b) {
+  if (isNaN(a) || isNaN(b)) {
+    console.log('NaN');
+  } else {
+    console.log(a + b);
   }
-  console.log(add(a, b));
 }
+add(a, b);
